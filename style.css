@@ -1,0 +1,378 @@
+/**************************************
+ *  Eric Gan and Dominic Rochon       *
+ *  ISU Project - Theory Maker        *
+ *  ICS4U                             *
+ *  Ms. Cullum                        *
+ *  CSS File                          *                                 
+ *************************************/
+
+/* Background screen colour */
+body 
+{
+  background-color: lightblue;
+  margin: 0;
+}
+
+/* Propreties for id titleHeader */
+#titleHeader 
+{
+  color: steelblue;
+  text-emphasis: initial;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 100px;
+  margin-top: 1%;
+  margin-bottom: 0%;
+}
+
+/* Propreties for id subHeader */
+#subHeader 
+{
+  color: rgb(139, 72, 30);
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 30px;
+  margin-bottom: 0%;
+}
+
+/* Properties for id paragraphText */
+#paragraphText
+{
+  color: rgb(139, 72, 30);
+  text-align:center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+/* Properties for id contactInfo */
+#contactInfo
+{
+  color: white;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 25px;
+}
+
+/* Propreties for id buttonScale */
+#buttonScale
+{
+  margin: auto;
+  display: block;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Propreties for id buttonDegree */
+#buttonDegree
+{
+  margin: auto;
+  display: block;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Properties for class drawButton */
+.drawButton 
+{
+  height: 75px;
+  width: 100px;
+  background-color: steelblue;
+  border: none;
+  color: grey;
+  text-align: center;
+  margin-top: 3px;
+  display: block;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Properties for class submitButton */
+.submitButton 
+{
+  height: 75px;
+  width: 100px;
+  margin-top: 3px;
+  background-color: steelblue;
+  border: none;
+  color: white;
+  text-align: center;
+  display: block;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Properties for class clearButton */
+.clearButton 
+{
+  height: 75px;
+  width: 100px;
+  margin-top: 3px;
+  background-color: steelblue;
+  border: none;
+  margin: auto;
+  color: grey;
+  text-align: center;
+  display: block;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Properties for id normalButtons */
+#normalButtons
+{
+  text-align: center;
+}
+
+/* Propreties for id keySignature */
+#keySignature
+{
+  display: inline-block;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Properties for class inputNotes */
+.inputNotes
+{
+  display: inline-block;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: lightblue;
+  border: solid steelblue;
+}
+
+/* Properties for id inputText */
+#inputText
+{
+  width: 450px;
+  margin: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Properties for id buttonHarmonizer */
+#buttonHarmonizer
+{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 75px;
+  width: 100px;
+  margin-top: 3px;
+  background-color: steelblue;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Properties for id harmonizerResize */
+#harmonizerResize
+{
+  text-align: center;
+}
+
+/* Properties for class bottomAlignment */
+.bottomAlignment
+{
+  text-align: center;
+  margin-bottom: 0.5%;
+}
+
+/* Properties for drop down buttons */
+.custom-select 
+{
+  position: relative;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.custom-select select 
+{
+  display: none; 
+}
+
+.select-selected 
+{
+  background-color: steelblue;
+}
+
+.select-selected:after 
+{
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after 
+{
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+.select-items div, .select-selected 
+{
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+.select-items 
+{
+  position: absolute;
+  background-color: steelblue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.select-hide 
+{
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected 
+{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Properties for top navigatioin bar */
+.topnav 
+{
+  overflow: hidden;
+  background-color: steelblue;
+}
+
+.topnav a 
+{
+  float: left;
+  display: flex;
+  top: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+}
+
+.topnav a:hover 
+{
+  border-bottom: 3px solid lightblue;
+}
+
+.topnav a.active 
+{
+  border-bottom: 3px solid lightblue;
+}
+
+/* Properties for bottom bar */
+.botBar 
+{
+  overflow: hidden;
+  background-color: steelblue;
+  bottom: 0;
+  display: flex;
+  position: fixed;
+  justify-content: space-around;
+  width: 100%;
+}
+
+/* Width for elements on the screen display change depending on the display width */
+@media screen and (max-width:959px)
+{
+  #titleHeader
+  {
+    width: 100%;
+  }
+  #subHeader
+  {
+    width: 100%;
+  }
+  #contactInfo
+  {
+    width: 100%;
+  }
+  #paragraphText
+  {
+    width: 100%;
+  }
+  #dropDownButtons
+  {
+    width: 100%;
+  }
+  #normalButtons
+  {
+    width: 100%;
+  }
+  #harmonizerResize
+  {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:640px)
+{
+  #titleHeader
+  {
+    width: 100%;
+  }
+  #subHeader
+  {
+    width: 100%;
+  }
+  #contactInfo
+  {
+    width: 100%;
+  }
+  #paragraphText
+  {
+    width: 100%;
+  }
+  #dropDownButtons
+  {
+    width: 100%;
+  }
+  #normalButtons
+  {
+    width: 100%;
+  }
+  #harmonizerResize
+  {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:360px)
+{
+  #titleHeader
+  {
+    width: 360px;
+  }
+  #subHeader
+  {
+    width: 360px;
+  }
+  #contactInfo
+  {
+    width: 360px;
+  } 
+  #paragraphText
+  {
+    width: 360px;
+  }
+  #dropDownButtons
+  {
+    width: 360px;
+  }
+  #normalButtons
+  {
+    width: 360px;
+  }
+  #harmonizerResize
+  {
+    width: 360px;
+  }
+}

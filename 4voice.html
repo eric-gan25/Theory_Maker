@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1">
+    <title>
+      4 Voice Harmony
+    </title>
+    <link href = "style.css" rel = "stylesheet" type = "text/css" />
+    <script src = "https://unpkg.com/vexflow/releases/vexflow-min.js">
+    </script>
+  </head>
+
+  <body>
+    <!-- Top Navigation Bar -->
+    <div class = "topnav">
+      <a href = "index.html">Home</a>
+      <a class = "active" href = "4voice.html">4 Voice Harmony</a>
+    </div>
+
+    <!-- Title header -->
+    <h1 id = "titleHeader">
+      4 Voice Harmony
+    </h1>
+
+    <div id = "dropDownButtons">
+      <!-- Drop Down Button for selecting scale and key signature -->
+      <div id = "buttonScale" class = "custom-select" style = "width: 180px;">
+        <select id = "scale1">
+          <option value = "">Select Scale:</option>
+          <option value = "C">C Major</option>
+          <option value = "G">G Major</option>
+          <option value = "D">D Major</option>
+          <option value = "A">A Major</option>
+          <option value = "E">E Major</option>
+          <option value = "F">F Major</option>
+          <option value = "Bb">B Flat Major</option>
+          <option value = "Eb">E Flat Major</option>
+          <option value = "Ab">A Flat Major</option>
+        </select>
+      </div>
+
+      <!-- Drop Down Button for selecting scale degree -->    
+      <div id = "buttonDegree" class = "custom-select" style = "width: 180px">
+        <select id = "degree1">
+          <option value = "">Select Scale Degree:</option>
+          <option value = "0">I</option>
+          <option value = "1">II</option>
+          <option value = "2">III</option>
+          <option value = "3">IV</option>
+          <option value = "4">V</option>
+          <option value = "5">VI</option>
+          <option value = "6">VII</option>
+          <option value = "7">I</option>
+        </select>
+      </div>
+    </div>
+    
+    <div id = "normalButtons">
+      <!-- Button for drawing staves -->
+      <button class = "drawButton" onclick = "drawStaves()" style = "display:inline-block" id = "drawButton" disabled = "true">
+        Draw Staves
+      </button>
+
+      <!-- Button for getting user input -->  
+      <button class = "submitButton" onclick = "getOption()" id = "submitButton" style = "display:inline-block"> 
+        Submit 
+      </button>
+
+      <!-- Button for clearing screen -->    
+      <button class = "clearButton" onclick = "clearScreen()" id = "clearButton" style = "display:inline-block" disabled = "true">
+        Clear
+      </button> 
+    </div>
+    
+    <div style = "text-align: center">
+      <!-- Text that notifies the user if they inputted their notes -->
+      <p id = "pressed" style = "display:none">
+        Based on the scale and degree that you chose, these are your notes:
+      </p>
+
+      <!-- The user's four notes -->
+      <p id = "root" style = "display:inline-block">
+      </p>
+
+      <p id = "extRootNote" style = "display:inline-block">
+      </p>
+     
+      <p id = "thirdNote" style = "display:inline-block">
+      </p>
+
+      <p id = "fifthNote" style = "display:inline-block">
+      </p>
+      
+
+      <!-- Text that notifies the user if their three notes(excluding the root note, the note with the cotave range /2) pass the algorithm --> 
+      <p id = "isOctave" style = "display:none">
+        Your notes follow the 4 voice rule and will be drawn.
+      </p>
+
+      <p id = "isNotOctave" style = "display:none">
+        Your notes do not follow the 4 voice rules and will not be drawn.
+      </p>
+    </div>
+
+    <!-- This div is all of the VexFlow music notation -->
+    <div id = "boo">
+    </div>
+
+    <script src="script.js">
+    </script>
+  </body>
+</html>
